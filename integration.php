@@ -79,13 +79,6 @@ $email = $hook->getValue('contact_email');
 $message = $hook->getValue('message');
 $other = $hook->getValue('other');
 
-//I want a demo - 1161661
-//I want to know more about your technology - 1161663
-//I have a specific case - 1161665
-//I want to look at prices - 1161667
-//I want to become a partner - 1161669
-//Other - 1161671
-
 //ДОБАВЛЯЕМ СДЕЛКУ
 $leads['request']['leads']['add']=array(
 	array(
