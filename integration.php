@@ -134,7 +134,7 @@ curl_setopt($curl,CURLOPT_SSL_VERIFYHOST,0);
 $out=curl_exec($curl); #Инициируем запрос к API и сохраняем ответ в переменную
 $code=curl_getinfo($curl,CURLINFO_HTTP_CODE);
 $Response=json_decode($out,true);
-//echo '<b>Новая сделка:</b>'; echo '<pre>'; print_r($Response); echo '</pre>';
+
 if(is_array($Response['response']['leads']['add']))
 	foreach($Response['response']['leads']['add'] as $lead) {
 		$lead_id = $lead["id"]; //id новой сделки
@@ -155,7 +155,7 @@ $contact = array(
 					'enum' => 'WORK'
 				),
 				array(
-				    'value' => 'info@navigine.com',
+				    'value' => '',
 					'enum' => 'WORK'
 				)
 			)
